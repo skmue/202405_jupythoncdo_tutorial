@@ -10115,9 +10115,7 @@ all of MD as it is not optimized for dense, information rich UIs.
    * https://material-components-web.appspot.com/elevation.html
    */
 
-  /* The dark theme shadows need a bit of work, but this will probably also require work on the core layout
-   * colors used in the theme as well. */
-  --jp-shadow-base-lightness: 32;
+  --jp-shadow-base-lightness: 0;
   --jp-shadow-umbra-color: rgba(
     var(--jp-shadow-base-lightness),
     var(--jp-shadow-base-lightness),
@@ -10171,10 +10169,10 @@ all of MD as it is not optimized for dense, information rich UIs.
    */
 
   --jp-border-width: 1px;
-  --jp-border-color0: var(--md-grey-700);
-  --jp-border-color1: var(--md-grey-700);
-  --jp-border-color2: var(--md-grey-800);
-  --jp-border-color3: var(--md-grey-900);
+  --jp-border-color0: var(--md-grey-400);
+  --jp-border-color1: var(--md-grey-400);
+  --jp-border-color2: var(--md-grey-300);
+  --jp-border-color3: var(--md-grey-200);
   --jp-inverse-border-color: var(--md-grey-600);
   --jp-border-radius: 2px;
 
@@ -10203,20 +10201,20 @@ all of MD as it is not optimized for dense, information rich UIs.
    */
 
   /* Defaults use Material Design specification */
-  --jp-ui-font-color0: rgba(255, 255, 255, 1);
-  --jp-ui-font-color1: rgba(255, 255, 255, 0.87);
-  --jp-ui-font-color2: rgba(255, 255, 255, 0.54);
-  --jp-ui-font-color3: rgba(255, 255, 255, 0.38);
+  --jp-ui-font-color0: rgba(0, 0, 0, 1);
+  --jp-ui-font-color1: rgba(0, 0, 0, 0.87);
+  --jp-ui-font-color2: rgba(0, 0, 0, 0.54);
+  --jp-ui-font-color3: rgba(0, 0, 0, 0.38);
 
   /*
    * Use these against the brand/accent/warn/error colors.
    * These will typically go from light to darker, in both a dark and light theme.
    */
 
-  --jp-ui-inverse-font-color0: rgba(0, 0, 0, 1);
-  --jp-ui-inverse-font-color1: rgba(0, 0, 0, 0.8);
-  --jp-ui-inverse-font-color2: rgba(0, 0, 0, 0.5);
-  --jp-ui-inverse-font-color3: rgba(0, 0, 0, 0.3);
+  --jp-ui-inverse-font-color0: rgba(255, 255, 255, 1);
+  --jp-ui-inverse-font-color1: rgba(255, 255, 255, 1);
+  --jp-ui-inverse-font-color2: rgba(255, 255, 255, 0.7);
+  --jp-ui-inverse-font-color3: rgba(255, 255, 255, 0.5);
 
   /* Content Fonts
    *
@@ -10244,11 +10242,11 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-content-heading-font-weight: 500;
 
   /* Defaults use Material Design specification */
-  --jp-content-font-color0: rgba(255, 255, 255, 1);
-  --jp-content-font-color1: rgba(255, 255, 255, 1);
-  --jp-content-font-color2: rgba(255, 255, 255, 0.7);
-  --jp-content-font-color3: rgba(255, 255, 255, 0.5);
-  --jp-content-link-color: var(--md-blue-300);
+  --jp-content-font-color0: rgba(0, 0, 0, 1);
+  --jp-content-font-color1: rgba(0, 0, 0, 0.87);
+  --jp-content-font-color2: rgba(0, 0, 0, 0.54);
+  --jp-content-font-color3: rgba(0, 0, 0, 0.38);
+  --jp-content-link-color: var(--md-blue-900);
   --jp-content-font-family: system-ui, -apple-system, blinkmacsystemfont,
     'Segoe UI', helvetica, arial, sans-serif, 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol';
@@ -10279,10 +10277,10 @@ all of MD as it is not optimized for dense, information rich UIs.
    * theme these would go from light to dark.
    */
 
-  --jp-layout-color0: #111;
-  --jp-layout-color1: var(--md-grey-900);
-  --jp-layout-color2: var(--md-grey-800);
-  --jp-layout-color3: var(--md-grey-700);
+  --jp-layout-color0: white;
+  --jp-layout-color1: white;
+  --jp-layout-color2: var(--md-grey-200);
+  --jp-layout-color3: var(--md-grey-400);
   --jp-layout-color4: var(--md-grey-600);
 
   /* Inverse Layout
@@ -10291,40 +10289,40 @@ all of MD as it is not optimized for dense, information rich UIs.
    * theme these would go from dark to light.
    */
 
-  --jp-inverse-layout-color0: white;
-  --jp-inverse-layout-color1: white;
-  --jp-inverse-layout-color2: var(--md-grey-200);
-  --jp-inverse-layout-color3: var(--md-grey-400);
+  --jp-inverse-layout-color0: #111;
+  --jp-inverse-layout-color1: var(--md-grey-900);
+  --jp-inverse-layout-color2: var(--md-grey-800);
+  --jp-inverse-layout-color3: var(--md-grey-700);
   --jp-inverse-layout-color4: var(--md-grey-600);
 
   /* Brand/accent */
 
-  --jp-brand-color0: var(--md-blue-700);
-  --jp-brand-color1: var(--md-blue-500);
+  --jp-brand-color0: var(--md-blue-900);
+  --jp-brand-color1: var(--md-blue-700);
   --jp-brand-color2: var(--md-blue-300);
   --jp-brand-color3: var(--md-blue-100);
   --jp-brand-color4: var(--md-blue-50);
-  --jp-accent-color0: var(--md-green-700);
-  --jp-accent-color1: var(--md-green-500);
+  --jp-accent-color0: var(--md-green-900);
+  --jp-accent-color1: var(--md-green-700);
   --jp-accent-color2: var(--md-green-300);
   --jp-accent-color3: var(--md-green-100);
 
   /* State colors (warn, error, success, info) */
 
-  --jp-warn-color0: var(--md-orange-700);
-  --jp-warn-color1: var(--md-orange-500);
+  --jp-warn-color0: var(--md-orange-900);
+  --jp-warn-color1: var(--md-orange-700);
   --jp-warn-color2: var(--md-orange-300);
   --jp-warn-color3: var(--md-orange-100);
-  --jp-error-color0: var(--md-red-700);
-  --jp-error-color1: var(--md-red-500);
+  --jp-error-color0: var(--md-red-900);
+  --jp-error-color1: var(--md-red-700);
   --jp-error-color2: var(--md-red-300);
   --jp-error-color3: var(--md-red-100);
-  --jp-success-color0: var(--md-green-700);
-  --jp-success-color1: var(--md-green-500);
+  --jp-success-color0: var(--md-green-900);
+  --jp-success-color1: var(--md-green-700);
   --jp-success-color2: var(--md-green-300);
   --jp-success-color3: var(--md-green-100);
-  --jp-info-color0: var(--md-cyan-700);
-  --jp-info-color1: var(--md-cyan-500);
+  --jp-info-color0: var(--md-cyan-900);
+  --jp-info-color1: var(--md-cyan-700);
   --jp-info-color2: var(--md-cyan-300);
   --jp-info-color3: var(--md-cyan-100);
 
@@ -10334,8 +10332,8 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-cell-collapser-width: 8px;
   --jp-cell-collapser-min-height: 20px;
   --jp-cell-collapser-not-active-hover-opacity: 0.6;
-  --jp-cell-editor-background: var(--jp-layout-color1);
-  --jp-cell-editor-border-color: var(--md-grey-700);
+  --jp-cell-editor-background: var(--md-grey-100);
+  --jp-cell-editor-border-color: var(--md-grey-300);
   --jp-cell-editor-box-shadow: inset 0 0 2px var(--md-blue-300);
   --jp-cell-editor-active-background: var(--jp-layout-color0);
   --jp-cell-editor-active-border-color: var(--jp-brand-color1);
@@ -10343,8 +10341,8 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-cell-prompt-font-family: var(--jp-code-font-family-default);
   --jp-cell-prompt-letter-spacing: 0;
   --jp-cell-prompt-opacity: 1;
-  --jp-cell-prompt-not-active-opacity: 1;
-  --jp-cell-prompt-not-active-font-color: var(--md-grey-300);
+  --jp-cell-prompt-not-active-opacity: 0.5;
+  --jp-cell-prompt-not-active-font-color: var(--md-grey-700);
 
   /* A custom blend of MD grey and blue 600
    * See https://meyerweb.com/eric/tools/color-blend/#546E7A:1E88E5:5:hex */
@@ -10358,7 +10356,7 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   --jp-notebook-padding: 10px;
   --jp-notebook-select-background: var(--jp-layout-color1);
-  --jp-notebook-multiselected-color: rgba(33, 150, 243, 0.24);
+  --jp-notebook-multiselected-color: var(--md-blue-50);
 
   /* The scroll padding is calculated to fill enough space at the bottom of the
   notebook to show one single-line cell (with appropriate padding) at the top
@@ -10373,13 +10371,13 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* Rendermime styles */
 
-  --jp-rendermime-error-background: rgba(244, 67, 54, 0.28);
-  --jp-rendermime-table-row-background: var(--md-grey-900);
-  --jp-rendermime-table-row-hover-background: rgba(3, 169, 244, 0.2);
+  --jp-rendermime-error-background: #fdd;
+  --jp-rendermime-table-row-background: var(--md-grey-100);
+  --jp-rendermime-table-row-hover-background: var(--md-light-blue-50);
 
   /* Dialog specific styles */
 
-  --jp-dialog-background: rgba(0, 0, 0, 0.6);
+  --jp-dialog-background: rgba(0, 0, 0, 0.25);
 
   /* Console specific styles */
 
@@ -10387,12 +10385,12 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* Toolbar specific styles */
 
-  --jp-toolbar-border-color: var(--jp-border-color2);
+  --jp-toolbar-border-color: var(--jp-border-color1);
   --jp-toolbar-micro-height: 8px;
   --jp-toolbar-background: var(--jp-layout-color1);
-  --jp-toolbar-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.8);
+  --jp-toolbar-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.24);
   --jp-toolbar-header-margin: 4px 4px 0 4px;
-  --jp-toolbar-active-background: var(--jp-layout-color0);
+  --jp-toolbar-active-background: var(--md-grey-300);
 
   /* Statusbar specific styles */
 
@@ -10401,43 +10399,43 @@ all of MD as it is not optimized for dense, information rich UIs.
   /* Input field styles */
 
   --jp-input-box-shadow: inset 0 0 2px var(--md-blue-300);
-  --jp-input-active-background: var(--jp-layout-color0);
-  --jp-input-hover-background: var(--jp-layout-color2);
-  --jp-input-background: var(--md-grey-800);
+  --jp-input-active-background: var(--jp-layout-color1);
+  --jp-input-hover-background: var(--jp-layout-color1);
+  --jp-input-background: var(--md-grey-100);
   --jp-input-border-color: var(--jp-inverse-border-color);
   --jp-input-active-border-color: var(--jp-brand-color1);
   --jp-input-active-box-shadow-color: rgba(19, 124, 189, 0.3);
 
   /* General editor styles */
 
-  --jp-editor-selected-background: var(--jp-layout-color2);
-  --jp-editor-selected-focused-background: rgba(33, 150, 243, 0.24);
+  --jp-editor-selected-background: #d9d9d9;
+  --jp-editor-selected-focused-background: #d7d4f0;
   --jp-editor-cursor-color: var(--jp-ui-font-color0);
 
   /* Code mirror specific styles */
 
-  --jp-mirror-editor-keyword-color: var(--md-green-500);
-  --jp-mirror-editor-atom-color: var(--md-blue-300);
-  --jp-mirror-editor-number-color: var(--md-green-400);
-  --jp-mirror-editor-def-color: var(--md-blue-600);
-  --jp-mirror-editor-variable-color: var(--md-grey-300);
-  --jp-mirror-editor-variable-2-color: var(--md-blue-500);
-  --jp-mirror-editor-variable-3-color: var(--md-green-600);
-  --jp-mirror-editor-punctuation-color: var(--md-blue-400);
-  --jp-mirror-editor-property-color: var(--md-blue-400);
+  --jp-mirror-editor-keyword-color: #008000;
+  --jp-mirror-editor-atom-color: #88f;
+  --jp-mirror-editor-number-color: #080;
+  --jp-mirror-editor-def-color: #00f;
+  --jp-mirror-editor-variable-color: var(--md-grey-900);
+  --jp-mirror-editor-variable-2-color: rgb(0, 54, 109);
+  --jp-mirror-editor-variable-3-color: #085;
+  --jp-mirror-editor-punctuation-color: #05a;
+  --jp-mirror-editor-property-color: #05a;
   --jp-mirror-editor-operator-color: #a2f;
   --jp-mirror-editor-comment-color: #408080;
-  --jp-mirror-editor-string-color: #ff7070;
-  --jp-mirror-editor-string-2-color: var(--md-purple-300);
+  --jp-mirror-editor-string-color: #ba2121;
+  --jp-mirror-editor-string-2-color: #708;
   --jp-mirror-editor-meta-color: #a2f;
   --jp-mirror-editor-qualifier-color: #555;
-  --jp-mirror-editor-builtin-color: var(--md-green-600);
+  --jp-mirror-editor-builtin-color: #008000;
   --jp-mirror-editor-bracket-color: #997;
-  --jp-mirror-editor-tag-color: var(--md-green-700);
-  --jp-mirror-editor-attribute-color: var(--md-blue-700);
-  --jp-mirror-editor-header-color: var(--md-blue-500);
-  --jp-mirror-editor-quote-color: var(--md-green-300);
-  --jp-mirror-editor-link-color: var(--md-blue-700);
+  --jp-mirror-editor-tag-color: #170;
+  --jp-mirror-editor-attribute-color: #00c;
+  --jp-mirror-editor-header-color: blue;
+  --jp-mirror-editor-quote-color: #090;
+  --jp-mirror-editor-link-color: #00c;
   --jp-mirror-editor-error-color: #f00;
   --jp-mirror-editor-hr-color: #999;
 
@@ -10447,17 +10445,17 @@ all of MD as it is not optimized for dense, information rich UIs.
     and the icon of the user.
   */
 
-  --jp-collaborator-color1: #ad4a00;
-  --jp-collaborator-color2: #7b6a00;
-  --jp-collaborator-color3: #007e00;
-  --jp-collaborator-color4: #008772;
-  --jp-collaborator-color5: #0079b9;
-  --jp-collaborator-color6: #8b45c6;
-  --jp-collaborator-color7: #be208b;
+  --jp-collaborator-color1: #ffad8e;
+  --jp-collaborator-color2: #dac83d;
+  --jp-collaborator-color3: #72dd76;
+  --jp-collaborator-color4: #00e4d0;
+  --jp-collaborator-color5: #45d4ff;
+  --jp-collaborator-color6: #e2b1ff;
+  --jp-collaborator-color7: #ff9de6;
 
   /* Vega extension styles */
 
-  --jp-vega-background: var(--md-grey-400);
+  --jp-vega-background: white;
 
   /* Sidebar-related styles */
 
@@ -10465,28 +10463,15 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* Search-related styles */
 
-  --jp-search-toggle-off-opacity: 0.6;
+  --jp-search-toggle-off-opacity: 0.5;
   --jp-search-toggle-hover-opacity: 0.8;
   --jp-search-toggle-on-opacity: 1;
-  --jp-search-selected-match-background-color: rgb(255, 225, 0);
+  --jp-search-selected-match-background-color: rgb(245, 200, 0);
   --jp-search-selected-match-color: black;
   --jp-search-unselected-match-background-color: var(
     --jp-inverse-layout-color0
   );
   --jp-search-unselected-match-color: var(--jp-ui-inverse-font-color0);
-
-  /* scrollbar related styles. Supports every browser except Edge. */
-
-  /* colors based on JetBrain's Darcula theme */
-
-  --jp-scrollbar-background-color: #3f4244;
-  --jp-scrollbar-thumb-color: 88, 96, 97; /* need to specify thumb color as an RGB triplet */
-  --jp-scrollbar-endpad: 3px; /* the minimum gap between the thumb and the ends of a scrollbar */
-
-  /* hacks for setting the thumb shape. These do nothing in Firefox */
-
-  --jp-scrollbar-thumb-margin: 3.5px; /* the space in between the sides of the thumb and the track */
-  --jp-scrollbar-thumb-radius: 9px; /* set to a large-ish value for rounded endcaps on the thumb */
 
   /* Icon colors that work well with light or dark backgrounds */
   --jp-icon-contrast-color0: var(--md-purple-600);
@@ -10508,15 +10493,15 @@ all of MD as it is not optimized for dense, information rich UIs.
   /* File or activity icons and switch semantic variables */
   --jp-jupyter-icon-color: #f37626;
   --jp-notebook-icon-color: #f37626;
-  --jp-json-icon-color: var(--md-orange-500);
-  --jp-console-icon-background-color: var(--md-blue-500);
+  --jp-json-icon-color: var(--md-orange-700);
+  --jp-console-icon-background-color: var(--md-blue-700);
   --jp-console-icon-color: white;
-  --jp-terminal-icon-background-color: var(--md-grey-200);
-  --jp-terminal-icon-color: var(--md-grey-800);
-  --jp-text-editor-icon-color: var(--md-grey-200);
-  --jp-inspector-icon-color: var(--md-grey-200);
+  --jp-terminal-icon-background-color: var(--md-grey-800);
+  --jp-terminal-icon-color: var(--md-grey-200);
+  --jp-text-editor-icon-color: var(--md-grey-700);
+  --jp-inspector-icon-color: var(--md-grey-700);
   --jp-switch-color: var(--md-grey-400);
-  --jp-switch-true-position-color: var(--md-orange-700);
+  --jp-switch-true-position-color: var(--md-orange-900);
 }
 </style>
 <style type="text/css">
@@ -10698,9 +10683,9 @@ main {
     init_mathjax();
     </script>
 <!-- End of mathjax configuration --><!-- Reveal Theme -->
-<link href="https://unpkg.com/reveal.js@4.0.2/dist/theme/dark.css" id="theme" rel="stylesheet"/>
+<link href="https://unpkg.com/reveal.js@4.0.2/dist/theme/white.css" id="theme" rel="stylesheet"/>
 </head>
-<body class="jp-Notebook" data-jp-theme-light="false" data-jp-theme-name="JupyterLab Dark">
+<body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
 <div class="reveal">
 <div class="slides"><section><section>
@@ -10838,16 +10823,16 @@ main {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h2 id="Let's-get-started!">Let's get started!<a class="anchor-link" href="#Let's-get-started!">¶</a></h2>
+<h2 id="Let's-get-started!">Let's get started!<a class="anchor-link" href="#Let's-get-started!">¶</a></h2><p>with some model output, reanalysis and observations:</p>
 </div>
 </div>
 </div>
-</div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=253a8256-4196-4e23-8b60-fc452410f518">
+</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=253a8256-4196-4e23-8b60-fc452410f518">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [21]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [101]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span> ls modeldata_precipitation/timmean*
@@ -10882,15 +10867,28 @@ modeldata_precipitation/timmean_pr_n90dis_ERA5_20162020.nc
 </div>
 </div>
 </div>
-</div></div><div class="fragment"><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d409ee07-196e-476d-9de5-b8fe87c1ae5a">
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=317eeba4-9a3b-44f6-bbd1-22b76cd85e64">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>and cdo:<br/>
+Basic syntax:
+cdo <em>operator</em> infile.nc outfile.nc</p>
+</div>
+</div>
+</div>
+</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d409ee07-196e-476d-9de5-b8fe87c1ae5a">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [22]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [102]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span> cdo sinfov modeldata_precipitation/timmean_ensmean_n90dis_pr_mmday_Amon_oooo__historical_r1i1p1f1_gn_19790116-20141216_v20190710.nc
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span> cdo sinfov modeldata_precipitation/timmean_5Y_n90dis_IFS4_pr_0p25deg.nc
 </pre></div>
 </div>
 </div>
@@ -10905,7 +10903,7 @@ modeldata_precipitation/timmean_pr_n90dis_ERA5_20162020.nc
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre><span class="ansi-bold">   File format</span> : NetCDF4
 <span class="ansi-bold">    -1 : Institut Source   T Steptype Levels Num    Points Num Dtype : Parameter name</span>
-     1 : <span class="ansi-blue-fg">unknown  ACCESS-CM2 v instant  </span><span class="ansi-green-fg">     1 </span>  1 <span class="ansi-green-fg">    64800 </span>  1 <span class="ansi-blue-fg"> F32  </span>: pr            
+     1 : <span class="ansi-blue-fg">unknown  unknown  v instant  </span><span class="ansi-green-fg">     1 </span>  1 <span class="ansi-green-fg">    64800 </span>  1 <span class="ansi-blue-fg"> F64  </span>: pr            
 <span class="ansi-bold">   Grid coordinates</span> :
      1 : <span class="ansi-blue-fg">gaussian                </span> : <span class="ansi-green-fg">points=64800 (360x180)  F90</span>
                               lon : 0 to 359 by 1 degrees_east  circular
@@ -10914,16 +10912,92 @@ modeldata_precipitation/timmean_pr_n90dis_ERA5_20162020.nc
      1 : <span class="ansi-blue-fg">surface                 </span> :<span class="ansi-green-fg"> levels=1</span>
 <span class="ansi-bold">   Time coordinate</span> :
                              time : <span class="ansi-green-fg">1 step
-</span>     RefTime =  1850-01-01 00:00:00  Units = days  Calendar = proleptic_gregorian  Bounds = true
+</span>     RefTime =  1970-01-01 00:00:00  Units = seconds  Calendar = proleptic_gregorian  Bounds = true
   YYYY-MM-DD hh:mm:ss  YYYY-MM-DD hh:mm:ss  YYYY-MM-DD hh:mm:ss  YYYY-MM-DD hh:mm:ss
-<span class="ansi-magenta-fg">  1997-01-01 00:00:00</span>
-<span class="ansi-green-fg">cdo    sinfon: </span>Processed 1 variable over 1 timestep [0.01s 70MB].
+<span class="ansi-magenta-fg">  2022-07-16 12:00:00</span>
+<span class="ansi-green-fg">cdo    sinfon: </span>Processed 1 variable over 1 timestep [0.01s 74MB].
 </pre>
 </div>
 </div>
 </div>
 </div>
-</div></div></section></section><section><section>
+</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=4527b078-b0b0-48c5-b089-2cb1d15deb5a">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [103]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span> cdo fldmean modeldata_precipitation/timmean_5Y_n90dis_IFS4_pr_0p25deg.nc modeldata_precipitation/fldtimmean_5Y_n90dis_IFS4_pr_0p25deg.nc
+<span class="o">!</span> cdo infov modeldata_precipitation/fldtimmean_5Y_n90dis_IFS4_pr_0p25deg.nc
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>cdo    fldmean:                        1 1 1 1 1 1 1 1 1 1 2 2 2 2 2 2 2 2 2 2 3 3 3 3 3 3 3 3 3 3 4 4 4 4 4 4 4 4 4 4 5 5 5 5 5 5 5 5 5 5 6 6 6 6 6 6 6 6 6 6 7 7 7 7 7 7 7 7 7 7 8 8 8 8 8 8 8 8 8 8 9 9 9 9 9 9 9 9 9 910<span class="ansi-green-fg">cdo    fldmean: </span>Processed 64800 values from 1 variable over 1 timestep [0.06s 74MB].
+<span class="ansi-bold">    -1 :       Date     Time   Level Gridsize    Miss :     Minimum        Mean     Maximum : Parameter name
+</span>     1 :<span class="ansi-magenta-fg"> 2022-07-16 12:00:00 </span><span class="ansi-green-fg">      0        1       0 </span>:<span class="ansi-blue-fg">                0.090228            </span> : pr            
+<span class="ansi-green-fg">cdo    infon: </span>Processed 1 value from 1 variable over 1 timestep [0.01s 74MB].
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=fb4822a4-1f22-4efd-9261-dfd308cafa28">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Piping commands:<br/>
+cdo <em>operator1</em> <em>-operator2</em> <em>-operator3</em> ...  <em>-operatorN</em> infile.nc outfile.nc</p>
+</div>
+</div>
+</div>
+</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=9691406c-029f-415b-ab20-6a08966ba68f">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [104]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="o">!</span> cdo infov -mulc,1000. -divc,30. modeldata_precipitation/fldtimmean_5Y_n90dis_IFS4_pr_0p25deg.nc #modeldata_precipitation/mmday_fldtimmean_5Y_n90dis_IFS4_pr_0p25deg.nc
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre><span class="ansi-green-fg">cdo(1) mulc: </span>Process started
+<span class="ansi-green-fg">cdo(2) divc: </span>Process started
+<span class="ansi-bold">    -1 :       Date     Time   Level Gridsize    Miss :     Minimum        Mean     Maximum : Parameter name
+</span>     1 :<span class="ansi-magenta-fg"> 2022-07-16 12:00:00 </span><span class="ansi-green-fg">      0        1       0 </span>:<span class="ansi-blue-fg">                  3.0076            </span> : pr            
+<span class="ansi-green-fg">cdo(2) divc: </span>Processed 1 value from 1 variable over 1 timestep.
+<span class="ansi-green-fg">cdo(1) mulc: </span>Processed 1 value from 1 variable over 1 timestep.
+<span class="ansi-green-fg">cdo    infon: </span>Processed 1 value from 1 variable over 1 timestep [0.01s 74MB].
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=961c89fd-2428-413c-a073-3f3b0b46af5c">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
@@ -10939,10 +11013,10 @@ modeldata_precipitation/timmean_pr_n90dis_ERA5_20162020.nc
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [23]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [105]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">file</span> <span class="o">=</span> <span class="s1">'modeldata_precipitation/timmean_ensmean_n90dis_pr_mmday_Amon_oooo__historical_r1i1p1f1_gn_19790116-20141216_v20190710.nc'</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">file</span> <span class="o">=</span> <span class="s1">'modeldata_precipitation/timmean_5Y_n90dis_IFS4_pr_0p25deg.nc'</span>
 </pre></div>
 </div>
 </div>
@@ -10953,7 +11027,7 @@ modeldata_precipitation/timmean_pr_n90dis_ERA5_20162020.nc
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [24]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [106]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">subprocess</span>
@@ -10975,7 +11049,7 @@ modeldata_precipitation/timmean_pr_n90dis_ERA5_20162020.nc
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
 <pre>   File format : NetCDF4
     -1 : Institut Source   T Steptype Levels Num    Points Num Dtype : Parameter name
-     1 : unknown  ACCESS-CM2 v instant       1   1     64800   1  F32  : pr            
+     1 : unknown  unknown  v instant       1   1     64800   1  F64  : pr            
    Grid coordinates :
      1 : gaussian                 : points=64800 (360x180)  F90
                               lon : 0 to 359 by 1 degrees_east  circular
@@ -10984,9 +11058,9 @@ modeldata_precipitation/timmean_pr_n90dis_ERA5_20162020.nc
      1 : surface                  : levels=1
    Time coordinate :
                              time : 1 step
-     RefTime =  1850-01-01 00:00:00  Units = days  Calendar = proleptic_gregorian  Bounds = true
+     RefTime =  1970-01-01 00:00:00  Units = seconds  Calendar = proleptic_gregorian  Bounds = true
   YYYY-MM-DD hh:mm:ss  YYYY-MM-DD hh:mm:ss  YYYY-MM-DD hh:mm:ss  YYYY-MM-DD hh:mm:ss
-  1997-01-01 00:00:00
+  2022-07-16 12:00:00
 cdo    sinfon: Processed 1 variable over 1 timestep [0.01s 46MB].
 </pre>
 </div>
@@ -11004,15 +11078,147 @@ cdo    sinfon: Processed 1 variable over 1 timestep [0.01s 46MB].
 </div>
 </div>
 </div>
-</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=96277c26">
+</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=96277c26">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [107]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">spct</span><span class="p">(</span><span class="s1">'ncview '</span><span class="o">+</span><span class="n">file</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># spct('ncview '+file)</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div></section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f07bf944-ead2-466f-8c3a-c0f3d284dba4">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><img alt="Image" src="ncview_file.png"/></p>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=76de7d65-bf80-4475-9759-3165098c67d6">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h3 id="have-a-closer-look-using-python-module-netCDF4">have a closer look using python module netCDF4<a class="anchor-link" href="#have-a-closer-look-using-python-module-netCDF4">¶</a></h3>
+</div>
+</div>
+</div>
+</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=a292fc92">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [108]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">netCDF4</span>
+<span class="n">nc_file</span> <span class="o">=</span> <span class="n">netCDF4</span><span class="o">.</span><span class="n">Dataset</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">nc_file</span><span class="o">.</span><span class="n">variables</span><span class="p">[</span><span class="s1">'pr'</span><span class="p">])</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>&lt;class 'netCDF4._netCDF4.Variable'&gt;
+float64 pr(time, lat, lon)
+    units: m
+    CDI_grid_type: gaussian
+    CDI_grid_num_LPE: 90
+    _FillValue: 9999.0
+    missing_value: 9999.0
+    cell_methods: time: mean
+    paramId: 228
+    dataType: fc
+    numberOfPoints: 1038240
+    typeOfLevel: surface
+    stepUnits: 1
+    stepType: accum
+    gridType: regular_ll
+    shortName: tp
+    name: Total precipitation
+    cfVarName: tp
+    missingValue: 9999
+    NV: 0
+    gridDefinitionDescription: Latitude/longitude
+unlimited dimensions: time
+current shape = (1, 180, 360)
+filling off
+</pre>
+</div>
+</div>
+</div>
+</div>
+</div></section></section><section><section>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=34841617-69c2-4893-81d2-fe11d97c5564">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h2 id="CDSAPI">CDSAPI<a class="anchor-link" href="#CDSAPI">¶</a></h2><p><a href="https://www.youtube.com/watch?v=AmF1nn7o6Hc"><img alt="Adrian Tompkins - Climate Unboxed" src="http://img.youtube.com/vi/AmF1nn7o6Hc/0.jpg"/></a></p>
+</div>
+</div>
+</div>
+</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=378e9d91-25ad-43ec-90bd-7dd86010007c">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [112]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">cdsapi</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="n">c</span> <span class="o">=</span> <span class="n">cdsapi</span><span class="o">.</span><span class="n">Client</span><span class="p">()</span>
+<span class="k">for</span> <span class="n">year</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2016</span><span class="p">,</span><span class="mi">2020</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">year</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="s1">'downloadERA5_oooo_'</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">year</span><span class="p">)</span><span class="o">+</span><span class="s1">'.nc'</span><span class="p">):</span>
+        <span class="n">c</span><span class="o">.</span><span class="n">retrieve</span><span class="p">(</span>
+        <span class="s1">'reanalysis-era5-single-levels-monthly-means'</span><span class="p">,</span>
+            <span class="p">{</span>
+                <span class="s1">'product_type'</span><span class="p">:</span> <span class="s1">'monthly_averaged_reanalysis'</span><span class="p">,</span>            
+                <span class="s1">'variable'</span><span class="p">:</span> <span class="p">[</span>
+    		    <span class="s1">'surface_latent_heat_flux'</span><span class="p">,</span> 
+    		    <span class="s1">'surface_sensible_heat_flux'</span><span class="p">,</span> 
+    		    <span class="s1">'surface_net_solar_radiation'</span><span class="p">,</span>
+    		    <span class="s1">'surface_net_thermal_radiation'</span><span class="p">,</span>
+    		    <span class="s1">'top_net_solar_radiation'</span><span class="p">,</span>
+    		    <span class="s1">'top_net_thermal_radiation'</span><span class="p">,</span>
+    		    <span class="s1">'total_column_cloud_ice_water'</span><span class="p">,</span> 
+    		    <span class="s1">'total_column_cloud_liquid_water'</span><span class="p">,</span>
+    		    <span class="s1">'total_precipitation'</span><span class="p">,</span>
+                <span class="p">],</span>
+                <span class="s1">'year'</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">year</span><span class="p">),</span>
+                <span class="s1">'month'</span><span class="p">:</span> <span class="p">[</span>
+                    <span class="s1">'01'</span><span class="p">,</span> <span class="s1">'02'</span><span class="p">,</span> <span class="s1">'03'</span><span class="p">,</span>
+                    <span class="s1">'04'</span><span class="p">,</span> <span class="s1">'05'</span><span class="p">,</span> <span class="s1">'06'</span><span class="p">,</span>
+                    <span class="s1">'07'</span><span class="p">,</span> <span class="s1">'08'</span><span class="p">,</span> <span class="s1">'09'</span><span class="p">,</span>
+                    <span class="s1">'10'</span><span class="p">,</span> <span class="s1">'11'</span><span class="p">,</span> <span class="s1">'12'</span><span class="p">,</span>
+                <span class="p">],</span>
+                <span class="s1">'time'</span><span class="p">:</span> <span class="s1">'00:00'</span><span class="p">,</span>
+                <span class="s1">'format'</span><span class="p">:</span> <span class="s1">'netcdf'</span><span class="p">,</span>
+            <span class="p">},</span>
+            <span class="s1">'downloadERA5_oooo_'</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">year</span><span class="p">)</span><span class="o">+</span><span class="s1">'.nc'</span><span class="p">)</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">'file already exists!'</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
@@ -11025,50 +11231,87 @@ cdo    sinfon: Processed 1 variable over 1 timestep [0.01s 46MB].
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>Ncview 2.1.8 David W. Pierce  8 March 2017
-http://meteora.ucsd.edu:80/~pierce/ncview_home_page.html
-Copyright (C) 1993 through 2015, David W. Pierce
-Ncview comes with ABSOLUTELY NO WARRANTY; for details type `ncview -w'.
-This is free software licensed under the Gnu General Public License version 3; type `ncview -c' for redistribution details.
-
-Warning: Cannot convert string "-*-lucida-bold-r-*-*-14-*-*-*-*-*-*-*" to type FontStruct
+<pre>2024-05-08 11:16:35,646 INFO Welcome to the CDS
+2024-05-08 11:16:35,649 INFO Sending request to https://cds.climate.copernicus.eu/api/v2/resources/reanalysis-era5-single-levels-monthly-means
 </pre>
 </div>
 </div>
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>calculating min and maxes for pr.</pre>
+<pre>2016
+</pre>
 </div>
 </div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>2024-05-08 11:16:35,760 INFO Request is queued
+2024-05-08 11:16:36,777 INFO Request is running
+2024-05-08 11:16:49,033 INFO Request is completed
+2024-05-08 11:16:49,034 INFO Downloading https://download-0002-clone.copernicus-climate.eu/cache-compute-0002/cache/data6/adaptor.mars.internal-1715159805.0285292-16619-16-b76a9a9a-ec11-4a6a-89bf-4f37fe19961b.nc to downloadERA5_oooo_2016.nc (213.9M)
+2024-05-08 11:17:12,749 INFO Download rate 9M/s                                                                                                 
+2024-05-08 11:17:12,788 INFO Welcome to the CDS
+2024-05-08 11:17:12,790 INFO Sending request to https://cds.climate.copernicus.eu/api/v2/resources/reanalysis-era5-single-levels-monthly-means
+2024-05-08 11:17:12,842 INFO Request is queued
+</pre>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=bce65fd0-8c5a-4561-9fb3-6e765ddc9f68">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="n">ncview_file</span><span class="o">.</span><span class="n">png</span>
-</pre></div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>2017
+</pre>
 </div>
 </div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>2024-05-08 11:17:13,861 INFO Request is running
+2024-05-08 11:17:26,120 INFO Request is completed
+2024-05-08 11:17:26,121 INFO Downloading https://download-0003-clone.copernicus-climate.eu/cache-compute-0003/cache/data9/adaptor.mars.internal-1715159840.826419-28386-3-fae4d674-30d7-497e-a45c-b223140723f7.nc to downloadERA5_oooo_2017.nc (213.9M)
+2024-05-08 11:17:50,694 INFO Download rate 8.7M/s                                                                                               
+2024-05-08 11:17:50,721 INFO Welcome to the CDS
+2024-05-08 11:17:50,722 INFO Sending request to https://cds.climate.copernicus.eu/api/v2/resources/reanalysis-era5-single-levels-monthly-means
+2024-05-08 11:17:50,754 INFO Request is queued
+</pre>
 </div>
 </div>
-</div></section></section><section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=a292fc92">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>2018
+</pre>
 </div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">netCDF4</span>
-<span class="n">nc_file</span> <span class="o">=</span> <span class="n">netCDF4</span><span class="o">.</span><span class="n">Dataset</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">nc_file</span><span class="p">)</span>
-</pre></div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>2024-05-08 11:17:51,771 INFO Request is running
+2024-05-08 11:18:04,029 INFO Request is completed
+2024-05-08 11:18:04,030 INFO Downloading https://download-0015-clone.copernicus-climate.eu/cache-compute-0015/cache/data9/adaptor.mars.internal-1715159879.735495-23781-1-41478cc0-c0a2-45a5-b6e0-bc75698a2e58.nc to downloadERA5_oooo_2018.nc (213.9M)
+2024-05-08 11:18:26,731 INFO Download rate 9.4M/s                                                                                               
+2024-05-08 11:18:26,760 INFO Welcome to the CDS
+2024-05-08 11:18:26,761 INFO Sending request to https://cds.climate.copernicus.eu/api/v2/resources/reanalysis-era5-single-levels-monthly-means
+2024-05-08 11:18:26,797 INFO Request is queued
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>2019
+</pre>
+</div>
+</div>
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>2024-05-08 11:18:40,064 INFO Request is running
+2024-05-08 11:18:59,098 INFO Request is completed
+2024-05-08 11:18:59,100 INFO Downloading https://download-0015-clone.copernicus-climate.eu/cache-compute-0015/cache/data2/adaptor.mars.internal-1715159929.0780303-20576-7-580f40c6-c49f-4a04-b5b5-125cea238142.nc to downloadERA5_oooo_2019.nc (213.9M)
+2024-05-08 11:19:23,030 INFO Download rate 8.9M/s                                                                                               
+</pre>
 </div>
 </div>
 </div>
@@ -11084,12 +11327,12 @@ Warning: Cannot convert string "-*-lucida-bold-r-*-*-14-*-*-*-*-*-*-*" to type F
 </div>
 </div>
 </div>
-</div></section></section><section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=f988acfd">
+</div></section><section><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=f988acfd">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [109]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">glob</span>
@@ -11107,6 +11350,177 @@ Warning: Cannot convert string "-*-lucida-bold-r-*-*-14-*-*-*-*-*-*-*" to type F
     <span class="k">if</span>     <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">out_file</span><span class="p">):</span>
         <span class="nb">print</span><span class="p">(</span><span class="n">netCDF4</span><span class="o">.</span><span class="n">Dataset</span><span class="p">(</span><span class="n">out_file</span><span class="p">)</span><span class="o">.</span><span class="n">variables</span><span class="p">[</span><span class="s1">'pr'</span><span class="p">])</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
+<pre>&lt;class 'netCDF4._netCDF4.Variable'&gt;
+float64 pr(time, lat, lon)
+    _FillValue: nan
+    missing_value: nan
+    cell_methods: time: mean
+unlimited dimensions: time
+current shape = (1, 1, 1)
+filling off
+&lt;class 'netCDF4._netCDF4.Variable'&gt;
+float32 pr(time, lat, lon)
+    standard_name: pr
+    long_name: precipitation flux
+    units: kg m-2 s-1
+    param: 52.1.0
+    cell_methods: time: mean
+    _QuantizeBitRoundNumberOfSignificantBits: 13
+unlimited dimensions: time
+current shape = (1, 1, 1)
+filling off
+&lt;class 'netCDF4._netCDF4.Variable'&gt;
+float32 pr(time, lat, lon)
+    long_name: precipitation flux
+    units: kg m-2 s-1
+    cell_methods: time: mean cell: mean
+    component: atmo
+    vgrid: surface
+unlimited dimensions: time
+current shape = (1, 1, 1)
+filling off
+&lt;class 'netCDF4._netCDF4.Variable'&gt;
+float32 pr(time, lat, lon)
+    long_name: Total precipitation
+    units: m
+    _FillValue: -32767.0
+    missing_value: -32767.0
+    cell_methods: time: mean
+unlimited dimensions: time
+current shape = (1, 1, 1)
+filling on
+&lt;class 'netCDF4._netCDF4.Variable'&gt;
+float64 pr(time, lat, lon)
+    _FillValue: nan
+    missing_value: nan
+    cell_methods: time: mean
+unlimited dimensions: time
+current shape = (1, 1, 1)
+filling off
+&lt;class 'netCDF4._netCDF4.Variable'&gt;
+float64 pr(time, lat, lon)
+    units: m
+    _FillValue: 9999.0
+    missing_value: 9999.0
+    cell_methods: time: mean
+    paramId: 228
+    dataType: fc
+    numberOfPoints: 1038240
+    typeOfLevel: surface
+    stepUnits: 1
+    stepType: accum
+    gridType: regular_ll
+    shortName: tp
+    name: Total precipitation
+    cfVarName: tp
+    missingValue: 9999
+    NV: 0
+    gridDefinitionDescription: Latitude/longitude
+unlimited dimensions: time
+current shape = (1, 1, 1)
+filling off
+&lt;class 'netCDF4._netCDF4.Variable'&gt;
+float32 pr(time, lat, lon)
+    long_name: precipitation flux
+    units: kg m-2 s-1
+    cell_methods: time: mean cell: mean
+    component: atmo
+    vgrid: surface
+unlimited dimensions: time
+current shape = (1, 1, 1)
+filling off
+&lt;class 'netCDF4._netCDF4.Variable'&gt;
+float32 pr(time, lat, lon)
+    standard_name: precipitation_flux
+    long_name: Precipitation
+    units: kg m-2 s-1
+    _FillValue: 1e+20
+    missing_value: 1e+20
+    cell_methods: area: time: mean
+    comment: includes both liquid and solid phases
+    cell_measures: area: areacella
+    history: 2019-11-08T08:10:39Z altered by CMOR: replaced missing value flag (-1.07374e+09) with standard missing value (1e+20).
+unlimited dimensions: time
+current shape = (1, 1, 1)
+filling off
+&lt;class 'netCDF4._netCDF4.Variable'&gt;
+float32 pr(time, lat, lon)
+    standard_name: precipitation_flux
+    long_name: Precipitation
+    units: kg m-2 s-1
+    _FillValue: 1e+20
+    missing_value: 1e+20
+    cell_methods: area: time: mean
+    comment: includes both liquid and solid phases
+    cell_measures: area: areacella
+    history: 2019-11-08T08:26:36Z altered by CMOR: replaced missing value flag (-1.07374e+09) with standard missing value (1e+20).
+unlimited dimensions: time
+current shape = (1, 1, 1)
+filling off
+&lt;class 'netCDF4._netCDF4.Variable'&gt;
+float32 pr(time, lat, lon)
+    standard_name: pr
+    long_name: precipitation flux
+    units: kg m-2 s-1
+    param: 52.1.0
+    level_type: atmosphere
+    cell_methods: time: mean
+unlimited dimensions: time
+current shape = (1, 1, 1)
+filling off
+&lt;class 'netCDF4._netCDF4.Variable'&gt;
+float32 pr(time, lat, lon)
+    standard_name: pr
+    long_name: precipitation flux
+    units: kg m-2 s-1
+    param: 52.1.0
+    level_type: atmosphere
+    cell_methods: time: mean
+unlimited dimensions: time
+current shape = (1, 1, 1)
+filling off
+&lt;class 'netCDF4._netCDF4.Variable'&gt;
+float64 pr(time, lat, lon)
+    long_name: multi_satellite_calibrated_precipitation
+    units: mm/h
+    _FillValue: -32767.0
+    missing_value: -32767.0
+    cell_methods: time: mean
+    comment: This is the multi-satellite precipitation rate calibrated with gauge measurements
+unlimited dimensions: time
+current shape = (1, 1, 1)
+filling off
+&lt;class 'netCDF4._netCDF4.Variable'&gt;
+float64 pr(time, lat, lon)
+    _FillValue: nan
+    missing_value: nan
+    cell_methods: time: mean
+unlimited dimensions: time
+current shape = (1, 1, 1)
+filling off
+&lt;class 'netCDF4._netCDF4.Variable'&gt;
+float32 pr(time, lat, lon)
+    standard_name: pr
+    long_name: precipitation flux
+    units: kg m-2 s-1
+    param: 52.1.0
+    level_type: atmosphere
+    cell_methods: time: mean
+unlimited dimensions: time
+current shape = (1, 1, 1)
+filling off
+</pre>
 </div>
 </div>
 </div>
